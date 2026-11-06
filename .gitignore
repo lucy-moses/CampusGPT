@@ -1,0 +1,102 @@
+# Python bytecode and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+**/.cache/
+**/logs/
+**/fixtures/
+**/test_fixtures/
+**/testdata/
+**/test_data/
+
+# Environment files and credentials. Keep only explicit example templates.
+.env
+.env.*
+!.env.example
+!.env.*.example
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa
+id_ed25519
+.aws/
+**/.aws/
+.ssh/
+**/.ssh/
+secrets/
+**/secrets/
+credentials
+**/credentials
+*.credentials
+
+# Local university corpus, generated embeddings/vector stores, and evaluations
+/data/
+/database/
+**/database/
+/evaluation/
+/evaluation_results/
+/project_audit/
+**/chroma/
+**/chroma_db/
+**/vectorstore/
+**/vector_store/
+*.sqlite
+*.sqlite3
+*.db
+*.duckdb
+*.faiss
+*.index
+*.safetensors
+*.pt
+*.pth
+
+# Temporary files, logs, API payloads, and local outputs
+/tmp/
+/output.txt
+*.log
+*.tmp
+*.bak
+*.backup
+*.old
+
+# Evaluation outputs and data files at the project root
+/evaluation_ground_truth.csv
+/campusgpt*_metrics_*.csv
+/campusgpt_model_comparison.csv
+/campusgpt_rag_evaluation_report.txt
+# Standalone evaluation utilities and fixtures not needed to run the app.
+/evaluate_rag.py
+/calculate_metrics.py
+/calculate_rag_metrics.py
+# Keep fixtures and audit runners out until their embedded institutional data
+# has been reviewed and replaced with synthetic examples where appropriate.
+/scripts/test_*.py
+/scripts/benchmark_timetable_faculty.py
+/scripts/evaluate_*.py
+/scripts/run_final_audit_*.py
+/scripts/review_final_audit_run.py
+/scripts/revise_final_audit_suite.py
+
+# Frontend dependencies, generated builds, and local caches
+node_modules/
+.next/
+dist/
+build/
+coverage/
+**/tsconfig.tsbuildinfo
+.DS_Store
+Thumbs.db
+desktop.ini
